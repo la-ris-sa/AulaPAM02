@@ -1,2 +1,31 @@
-/**/
+*{
+    margin: 0;
+}
 
+#titulo{
+    margin-top: 15px;
+    font-family: 'Arial';
+    color: #177f36;
+    font-size: 30px;
+    text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    border: #b9b9b9 1px solid;
+    align-items: center;
+}
+
+#btnCalcImc{
+    background-color: #177f36;
+    border-radius: 10px;
+    border: 0;
+    align-items: center;
+}
+.row{
+    margin-bottom: 20px;
+}
+#res{
+    text-align: center;
+    font-size:18px;
+}

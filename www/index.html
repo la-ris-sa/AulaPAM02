@@ -6,12 +6,50 @@
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="components/motor.js"></script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <div class="container">
+        <div class="row">
+            <h1 id="titulo">Calculadora de IMC</h1>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <label for="nome">Digite seu nome:</label>
+            </div>
+            <div class="col-8 offset-2">
+                <input type="text" placeholder="Ex. Little Paulo" id="nome" class="col-12">
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <label for="inputmassa">Massa:</label>
+            </div> 
+            <div class="col-8 offset-2">
+                <input type="number" placeholder="Ex. 45" id="massa" name="inputmassa" step="0.1"  class="col-12">
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <label for="inputaltura">Altura:</label>
+            </div>
+            <div class="col-8 offset-2">
+                <input type="number" placeholder="Ex. 1.59" id="altura" name="inputaltura" step="0.01" class="col-12">       
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-4">
+                <input type="button" value="Calcular" id="btnCalcImc" onclick="calcIMC()"  class="col-12"> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2" id="teste">
+                <p id="res"></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
